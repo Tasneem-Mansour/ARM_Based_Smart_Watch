@@ -1,0 +1,74 @@
+/*
+ * MSPI_config.h
+ *
+ *  Created on: Feb 5, 2024
+ *      Author: Tasneem
+ */
+
+#ifndef MSPI_CONFIG_H_
+#define MSPI_CONFIG_H_
+
+#define SPI_OPERATION_MODE 	 	MASTER_MODE
+/*options:
+ * 1- MASTER_MODE
+ * 2- SLAVE_MODE
+ */
+
+#define DATA_SIZE  				BIT_SIZE_8
+/*options:
+ * 1- BIT_SIZE_8
+ * 2- BIT_SIZE_16
+ */
+
+#define CLK_POLARITY			CLK_POLARITY_FALLING_IDLE1
+/*options:
+ * 1- CLK_POLARITY_RISING_IDLE0
+ * 2- CLK_POLARITY_FALLING_IDLE1
+ */
+#define CLK_PHASE				CLK_PHASE_SETUP_FIRST
+/*options:
+ * 1- CLK_PHASE_SAMPLE_FIRST
+ * 2- CLK_PHASE_SETUP_FIRST
+ */
+
+#define CLK_BAUDRATE 			CLK_BAUDRATE_2
+/*options:
+ *CLK_BAUDRATE_2
+ *CLK_BAUDRATE_4
+ *CLK_BAUDRATE_8
+ *CLK_BAUDRATE_16
+ *CLK_BAUDRATE_32
+ *CLK_BAUDRATE_64
+ *CLK_BAUDRATE_128
+ *CLK_BAUDRATE_256
+ */
+
+#define FRAME_FORMAT 				MSB_FIRST
+/*options:
+ * 1- MSB_FIRST
+ * 2- LSB_FIRST
+ */
+
+#define SLAVE_SSM_MODE				SW_MANAGED
+/*options:
+ * 1- HW_MANAGED
+ * 2- SW_MANAGED
+ */
+
+#define SLAVE_SSI_MODE				NSS_ENABLED
+/*options:
+ * 1- NSS_DISABLED
+ * 2- NSS_ENABLED
+ */
+
+#define MASTER_SSM_MODE				SW_MANAGED
+/*options:
+ * 1- HW_MANAGED
+ * 2- SW_MANAGED
+ */
+#define MASTER_SSI_MODE				NSS_DISABLED
+/*options:
+ * 1- NSS_DISABLED
+ * 2- NSS_ENABLED
+ */
+#endif /* MSPI_CONFIG_H_ */

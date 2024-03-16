@@ -1,0 +1,33 @@
+/*
+  * MSYSTICK_config.h
+ *
+ *  Created on: Jan 21, 2024
+ *      Author: Tasneem
+ */
+
+#ifndef MSYSTICK_CONFIG_H_
+#define MSYSTICK_CONFIG_H_
+
+
+#define SYSTICK_CLK_SOURCE  	AHB_DIV_8
+ /*
+options:
+1- AHB_DIV_1
+2- AHB_DIV_8
+*/
+
+#define SYSTICK_INTERRUPT 		SYSTICK_INTERRUPT_ENABLE
+/*options:
+1-SYSTICK_INTERRUPT_DISABLE
+2-SYSTICK_INTERRUPT_ENABLE
+*/
+
+#define SYSTICK_STATE 			SYSTICK_STATE_DISABLE
+/*Options
+1- SYSTICK_STATE_DISABLE
+2- SYSTICK_STATE_ENABLE
+*/
+
+
+
+#endif /* MSYSTICK_CONFIG_H_ */
